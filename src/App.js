@@ -8,6 +8,8 @@ import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 import Cart from './Components/Cart/Cart';
 import {Helmet} from 'react-helmet';
+import About from './Components/About/About';
+import Faqs from './Components/FAQS/Faqs';
 const Layout = () => {
   return (
     <div className="app">
@@ -27,7 +29,14 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
-      
+      {
+        path: "/About",
+        element: <About />
+      },
+      {
+        path: "/FAQ",
+        element: <Faqs/>
+      }
     ],
   },
 ]);

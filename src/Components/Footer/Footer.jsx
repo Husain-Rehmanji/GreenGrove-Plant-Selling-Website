@@ -5,9 +5,11 @@ import { FaLinkedinIn  } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
 import { FaFacebook } from 'react-icons/fa';
+import { PiPottedPlantDuotone } from 'react-icons/pi';
 
 const Footer = () => {
   return (
+    <div className="full">
     <div className="footer">
       <div className="top">
         <div className="item">
@@ -39,17 +41,16 @@ const Footer = () => {
         <div className="item">
           <h1>Contact</h1>
           <span className="newsletter">
-        
             <form action="#" method="POST" className="NewsLetter">
               <input type="email" name='Email' placeholder="Enter your email" required/>  
               <input type="submit" value="Submit" className='button' style={{
-                backgroundColor: 'white',
-                color: 'black',
+                backgroundColor: '#3A9943',
+                color: 'white',
                 marginLeft: '10px',
                 border:  'black',
                 borderRadius: 4,
                 cursor: 'pointer',
-                opacity: 0.85
+                opacity: 1
               }}/>
               </form>
            
@@ -58,7 +59,7 @@ const Footer = () => {
       </div>
       <div className="bottom">
         <div className="left">
-          <span className="logo">Plantify</span>
+          <span className="logo"><PiPottedPlantDuotone className='mark'/>   Plantify</span>
           <span className="copyright">
             © Copyright 2020 - 2023. All Rights Reserved. Designed by OGGNtech
           </span>
@@ -67,6 +68,7 @@ const Footer = () => {
           <img src="/img/payment.png" alt="" />
         </div>
       </div>
+    </div>
     </div>
   );
 };

@@ -20,8 +20,6 @@ const Home = () => {
       <Slider />
       <Banner />
       <Category />
-      <About />
-      <Faqs/>
     </div>
   )
 }

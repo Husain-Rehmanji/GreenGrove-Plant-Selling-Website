@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { faq } from '../../data';
 import './Faqs.css';
+import {MdQuestionMark} from 'react-icons/md'
+import {FaLocationArrow} from 'react-icons/fa'
 
 const Faqs = () => {
     const [click, setClick] = useState(false)
@@ -27,14 +29,14 @@ const Faqs = () => {
   return (
     <>
      <div style={containerStyle}>
-       <h1 style={{fontSize: '38'}}>FAQS</h1>
+       <h1 style={{fontSize: '38'}}>FAQS <MdQuestionMark /></h1>
      </div>
      <section className='faq'>
         <div className="container">
             {faq.map((val,index)  =>(
                 <div className="box">
                     <button className='accordion' onClick={ () => toggle(index)} key={index}>
-                        <h3>{val.title}</h3>
+                        <h3><FaLocationArrow/>  {val.title}</h3>
                         <span>{ click===index? <i className='fa fa-chevron-down'> </i> : <i className='fa fa-chevron-right'> </i>}</span>
                     </button>
                     {click === index ?(
