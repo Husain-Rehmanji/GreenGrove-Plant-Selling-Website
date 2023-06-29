@@ -1,0 +1,16 @@
+h1 {
+    font-size: 36;
+    font-weight: bold;
+    margin-bottom: 7px;
+    margin-top: 15px;
+  }
+  p {
+    font-size: 30;
+  }
+  .txt {
+  /*  margin: 20px; */
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5rem;
+  }
+  
