@@ -1,47 +1,72 @@
-import React from 'react'
-import './Footer.css'
-
+import React from "react";
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { PiPottedPlantDuotone } from 'react-icons/pi';
+import "./Footer.scss";
+ 
 const Footer = () => {
   return (
-    <>
-      <section class="footer">
-
-<div class="box-container">
-
-    <div class="box">
-        <h3>about us</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo hic eum veniam aut nisi. Libero autem nemo amet recusandae eveniet?</p>
+    <div className="full">
+    <div className="footer">
+      <div className="top">
+        <div className="item">
+          <h1>Useful Links</h1>
+          <span>Track Order</span>
+          <span>Wishlist</span>
+          <span>Rewards</span>
+          <span>Affiliate</span>
+          <span>Corporate</span>
+        </div>
+        <div className="item">
+          <h1>About</h1>
+          <span>Privacy Policy</span>
+          <span>Refund policy</span>
+          <span>Shipping Policy</span>
+          <span>Terms of Service</span>
+        </div>
+        <div className="item">
+          <h1>Follow Us</h1>
+        <ul class="icons">
+            <li><a><FaGithub/></a></li>
+            <li><a><FaLinkedinIn/></a></li>
+            <li><a><FaInstagram/></a></li>
+            <li><a><FaTwitter/></a></li>
+            <li><a><FaFacebook/></a></li>
+        </ul>
+       
+        </div>
+        <div className="item">
+          <h1>Contact</h1>
+          <span className="newsletter">
+            <form action="#" method="POST" className="NewsLetter">
+              <input type="email" name='Email' placeholder="Enter your email" required/>  
+              <input type="submit" value="Submit" className='button' style={{
+                backgroundColor: '#3A9943',
+                color: 'white',
+                marginLeft: '10px',
+                border:  'black',
+                borderRadius: 4,
+                cursor: 'pointer',
+                opacity: 1
+              }}/>
+              </form>
+           
+          </span>
+        </div>
+      </div>
+      <div className="bottom">
+        <div className="left">
+          <span className="logo"><PiPottedPlantDuotone className='mark'/>   Plantify</span>
+          <span className="copyright">
+            © Copyright 2020 - 2023. All Rights Reserved. Designed by OGGNtech
+          </span>
+        </div>
+        <div className="right"> 
+          <img src="/images/payment.png" alt="" />
+        </div>
+      </div>
     </div>
-    <div class="box">
-        <h3>branch locations</h3>
-        <a href="#">india</a>
-        <a href="#">USA</a>
-        <a href="#">japan</a>
-        <a href="#">france</a>
     </div>
-    <div class="box">
-        <h3>quick links</h3>
-        <a href="#">home</a>
-        <a href="#">category</a>
-        <a href="#">product</a>
-        <a href="#">deal</a>
-        <a href="#">contact</a>
-    </div>
-    <div class="box">
-        <h3>follow us</h3>
-        <a href="#">facebook</a>
-        <a href="#">twitter</a>
-        <a href="#">instagram</a>
-        <a href="#">linked</a>
-    </div>
+  );
+}; 
 
-</div>
-
-<h1 class="credit"> created by <span> OGGN TECH </span> | all rights reserved! </h1>
-
-</section>
-    </>
-  )
-}
-
-export default Footer
+export default Footer;

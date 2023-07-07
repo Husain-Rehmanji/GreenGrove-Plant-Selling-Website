@@ -8,7 +8,7 @@ const Deal = () => {
     const [mins,setMinutes] = useState(0)
     const [secs,setSeconds] = useState(0)
 
-    const deadline = "June, 30, 2023";
+    const deadline = "July, 9, 2023";
     const getTime = () => {
         const time = Date.parse(deadline)-Date.now()
         setDays(Math.floor(time/(1000*60*60*24 )))

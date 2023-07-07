@@ -1,0 +1,142 @@
+.footer {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  background-color: #3A9943 ;
+  
+  .top {
+    display: flex;
+    gap: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    
+
+    .item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      text-align: justify;
+      font-size: 16px;
+
+      .icons{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 7px 0px;
+        color: #ffffff;
+    }
+    .icons li{
+        list-style: none;
+    }
+    .icons li a{
+        font-size: 2rem;
+        color: #ffffff;
+        margin: 0px 7px;
+        display: inline-block;
+        opacity: 0.8;
+    }
+    .icons li a:hover{
+      color: #ffffff;
+        opacity: 1;
+        cursor: pointer;
+    }
+
+      h1{
+        font-size: 20px;
+        font-weight: 500;
+        color: #ffffff;
+        margin-top: 4rem;
+      }
+
+      span{
+        color: #ffffff;
+        cursor: pointer;
+        opacity: 0.8;
+      }
+      .contact{
+        margin: 7px 0;
+        text-align: center;
+    }
+    .contact h2{
+        color: rgb(255, 255, 255);
+      
+    }
+    .contact b{
+        text-decoration: none;
+        color:rgb(255, 255, 255);
+        font-size: 17px;
+    }
+    .contact b:hover{
+        color: white;
+        opacity: 1;
+        cursor: pointer;
+    }
+    .newsletter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+      }
+      
+      .newsletter input[type='text'] {
+        padding: 5px;
+        width: 200px;
+        margin-right: 10px;
+        border-radius: 4px;
+        border: none;
+        background-color: #ffffff;
+      }
+      
+      .newsletter button {
+        padding: 5px 10px;
+        background-color: #1eb2a6;
+        color: #ffffff;
+        color: #ffffff;
+        border-radius: 4px;
+        cursor: pointer;
+        opacity: 0.85;
+      }
+      
+      .newsletter button:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+    .left {
+      display: flex;
+      align-items: center;
+
+      .logo{
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 24px;
+        .mark{
+          color: #ffffff;
+        }
+      }
+
+      .copyright{
+        margin-left: 20px;
+        font-size: 14px;
+        color: #ffffff;
+        
+      }
+    }
+    .right {
+
+      img{
+        height: 50px;
+      }
+    }
+  }
+}

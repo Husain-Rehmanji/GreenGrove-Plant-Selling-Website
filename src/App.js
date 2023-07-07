@@ -9,13 +9,20 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Icons from './components/Icons/Icons';
 import Products from './components/Products/Products';
+// import { Route, Routes } from 'react-router-dom';
 import Slider from './components/Slider/Slider';
 
 const App = () => {
   return (
     <>
-    <Header /> 
-      <Slider />
+    {/* <Header />
+    <Routes>
+       <Route path='/' element={<Slider/>}/>
+       <Route path='/category' element={<Category/>} />
+    </Routes>   
+    <Footer /> */}
+    <Header/>
+    <Slider/>
       <Banner />
       <Category />
       <Products />
@@ -24,7 +31,7 @@ const App = () => {
       <Deal />
       <Contact />
       <Faqs />
-      <Footer />
+      <Footer/>
     </>
       
   );
